@@ -212,7 +212,7 @@ nav {
 /*---Subscribe Form---*/
 
 .subscribe {
-    margin-left: auto;
+    margin-left: -1px;
 }
 
 .subscribe-division {
