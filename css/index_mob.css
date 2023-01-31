@@ -20,7 +20,7 @@ body {
 
 /*--BASE STYLES--*/
 .container {
-    width: 100%;
+    max-width: 428px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
@@ -67,7 +67,7 @@ nav .logo {
 /*--MOBILE MEDIA-------------*/
 @media screen and (min-width: 480px) {
     .container {
-        width: 422px;
+        max-width: 422px;
     }
 }
 
@@ -874,6 +874,22 @@ textarea:focus {
         display: flex;
         justify-content: space-between;
     }
+
+    .mobile-menu_close-btn:hover,
+    .mobile-menu_close-btn:active {
+        background-color: var(--btn-accent-color);
+        fill: white;
+    }
+
+    .mobile-nav_item:hover a,
+    .mobile-nav_ite,:active a {
+        color: var(--btn-accent-color);
+    }
+
+    .mobile-contacts_tel:hover a,
+    .mobile-contacts_email:hover a {
+        color: var(--main-accent-color);
+    }
     
 }
 
@@ -882,7 +898,7 @@ textarea:focus {
 /*------TABLET MENU--------------------*/
 @media screen and (min-width: 768px) {
     .container {
-        width: 768px;
+        max-width: 768px;
     }
 
     .menu-button {

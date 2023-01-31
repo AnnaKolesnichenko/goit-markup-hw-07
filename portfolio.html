@@ -10,8 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
     />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" >
-    <link rel="stylesheet" href="./css/common.css" />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/portfolio.css"/>
   </head>
   <body>
     <header class="head">
@@ -19,19 +18,65 @@
         <nav>
           <a href="/" class="logo"><span>Web</span>Studio</a>
           <ul class="site-nav list">
-            <li class="item"><a href="./index.html">Studio</a></li>
-            <li class="item"><a href="" class="active current-page">Portfolio</a></li>
+            <li class="item"><a href="/">Studio</a></li>
+            <li class="item"><a href="./portfolio.html" class="active current-page">Portfolio</a></li>
             <li class="item"><a href="">Contacts</a></li>
           </ul>
-          </nav>
-          <ul class="contacts list">
-            <li class="item"><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li class="item"><a href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+          <button type="button" class="menu-button" data-menu-open>
+            <svg class="mobile-menu_icon" width="22" height="22" aria-label="Mobile menu shift">
+              <use class="icon-menu" href="./images/icons.svg#icon-menu"></use>
+            </svg>
+          </button>
+        </nav>                
+        <ul class="contacts list">
+          <li class="item"><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+          <li class="item"><a href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+        </ul>
+      </div>
+
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile-content_container">
+          <button class="mobile-menu_close-btn" data-menu-close>
+            <svg class="icon-close" width="24" height="24">
+              <use href="./images/icons.svg#icon-Vector"></use>
+            </svg>
+          </button>
+          <ul class="mobile-nav list">
+            <li class="mobile-nav_item"><a href="/">Studio</a></li>
+            <li class="mobile-nav_item"><a href="./portfolio.html">Portfolio</a></li>
+            <li class="mobile-nav_item"><a href="">Contacts</a></li>
           </ul>
+          <ul class="mobile-contacts list">
+            <li class="mobile-contacts_tel"><a href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+            <li class="mobile-contacts_email"><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+          </ul>
+          <ul class="list mobile-modal_media">
+            <li class="mobile-media-item">
+              <a href="" class="media-link">
+                <svg class="social-item"><use href="./images/icons.svg#icon-instagram"></use></svg>
+              </a>
+            </li>
+            <li class="mobile-media-item">
+              <a href="" class="media-link">
+                <svg class="social-item"><use href="./images/icons.svg#icon-twitter"></use></svg>
+              </a>
+            </li>
+            <li class="mobile-media-item">
+              <a href="" class="media-link">
+                <svg class="social-item"><use href="./images/icons.svg#icon-facebook"></use></svg>
+              </a>
+            </li>
+            <li class="mobile-media-item">
+              <a href="" class="media-link">
+                <svg class="social-item"><use href="./images/icons.svg#icon-linkedin"></use></svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
-      <section class="container project-examples">
+      <section class="project-examples">
         <div class="container">
         <h1 class="visually-hidden">Projects examples</h1>
         <ul class="filters list">
@@ -41,7 +86,7 @@
           <li class="item">
             <button type="button" class="filters-btn">Web Site</button>
           </li>
-          <li class="item">
+          <li class="item item-last">
             <button type="button" class="filters-btn">App</button>
           </li>
           <li class="item">
@@ -333,5 +378,6 @@
       </div>
 
     </footer>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

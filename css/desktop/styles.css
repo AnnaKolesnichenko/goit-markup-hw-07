@@ -9,6 +9,8 @@
     --btn-active-color: #404bbf;
 }
 
+
+
 body {
     background-color: var(--main-bg-color);
     color: var(--secondary-text-color);
