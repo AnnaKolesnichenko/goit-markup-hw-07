@@ -20,7 +20,7 @@ body {
 
 /*--BASE STYLES--*/
 .container {
-    max-width: 428px;
+    width: 428px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
@@ -860,7 +860,7 @@ textarea:focus {
         font-size: 36px;
         font-weight: 500;
         line-height: 1.1;
-        color: var(--main-text-color);
+        color: var(--main-accent-color);
     }
 
     .mobile-contacts_email a{
@@ -899,7 +899,7 @@ textarea:focus {
 /*------TABLET MENU--------------------*/
 @media screen and (min-width: 768px) {
     .container {
-        max-width: 768px;
+        width: 768px;
     }
 
     .menu-button {
