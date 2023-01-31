@@ -101,11 +101,22 @@
           <li class="project">
             <a href="" class="project-item">
               <div class="project-thumb">
-                <img
-                  src="./images/bank_app.jpg"
-                  alt="bank application"
-                  width="360"
+                <picture>
+                  <source srcset="./images/bank_app.jpg 1x, 
+                                ./images/bank_app@2x.jpg 2x"
+                                media="(min-width:1200px)"/>
+                  <source srcset="./images/tablet_images/bank_app.jpg 1x,
+                                  ./images/tablet_images/bank_app@2x.jpg 2x"
+                                  media="(min-width: 768px"/>   
+                  <source srcset="./images/mobile_images/bank_app.jpg 1x,
+                                ./images/mobile_images/bank_app@2x.jpg"
+                                media="(min-width: 480px)"/>
+                  <img src="./images/bank_app.jpg"
+                            alt="bank application"
+                            width="360"
                 />
+                </picture>
+                
                 <div class="overlay">
                   <p>
                     14 Stylish and User-Friendly App Design Concepts · 
