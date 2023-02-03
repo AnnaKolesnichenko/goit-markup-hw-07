@@ -12,6 +12,7 @@
     --link-active-highlight: #404bbf;
 }
 
+
 body {
     background-color: var(--main-bg-color);
     color: var(--main-text-color);
@@ -20,11 +21,15 @@ body {
 
 /*--BASE STYLES--*/
 .container {
-    width: 428px;
+    min-width: 428px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
+}
+
+section {
+    min-width: 428px;
 }
 
 
@@ -61,7 +66,7 @@ nav .logo {
 
 @media screen and (min-width: 320px) {
     .container {
-        width: 422px;
+        width: 428px;
     }
 }
 
@@ -148,8 +153,8 @@ nav .logo {
 
 .backdrop {
     position: fixed;
-    height: 677px;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     top: 0;
     left: 0;
     margin: auto;
@@ -839,8 +844,6 @@ textarea:focus {
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-   
-
     .current-page::after {
         content: '';
         position: absolute;
@@ -888,6 +891,10 @@ textarea:focus {
         margin-right: 0;
         margin-bottom: 72px;
         width: calc((100% - 24px) / 2);
+    }
+
+    .strategy:nth-last-child(-n + 2) {
+        margin-bottom: 0;
     }
 
     .strategies .strategy + .strategy {
@@ -1035,6 +1042,7 @@ textarea:focus {
 
     .footer .title-subscribe {
         text-align: left;
+        margin-left: 0;
     }
 
     .subscribe-input {
@@ -1057,12 +1065,13 @@ textarea:focus {
     .site-nav {
         margin-top: 0;
         margin-bottom: 0;
-        padding-top: 24px;
-        padding-bottom: 28px;
-    }
-
-    .site-nav .item a{
+        padding-top: 0;
         padding-bottom: 0;
+    }
+    
+    .site-nav a{
+        padding-bottom: 28px;
+        padding-top: 24px;
     }
 
     .contacts {
@@ -1074,12 +1083,12 @@ textarea:focus {
         padding-bottom: 28px;
     }
 
-    .contacts .item a {
+    .contacts .contact-item a{
         padding-bottom: 0;
         font-size: 16px;
     }
 
-    .contacts .item + .item {
+    .contacts .contact-item + .contact-item {
         margin-left: 40px;
     }
 
@@ -1087,10 +1096,8 @@ textarea:focus {
         padding-bottom: 28px;
     }
 
-    .logo {
-        padding-bottom: 28px;
-        margin-right: 76px;
-        margin-bottom: 0;
+    .logo {     
+        margin-right: 123px;
     }
 
     .site-nav a {
