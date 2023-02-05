@@ -29,11 +29,11 @@ body {
 }
 
 section {
-    min-width: 428px;
+    width: 428px;
 }
 
 footer {
-    min-width: 428px;
+    width: 428px;
 }
 
 
