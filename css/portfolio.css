@@ -24,6 +24,14 @@ img {
     height: auto;
 }
 
+section {
+    min-width: 428px;
+}
+
+footer {
+    min-width: 428px;
+}
+
 
 /*--BASE STYLES--*/
 .container {
